@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartDrop - Registrar Usuario</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gradient">
+  <main class="centered wide">
+    <h1 class="page-title">REGISTRAR NUEVO USUARIO</h1>
+
+    <section class="card form-card">
+      <form class="form" onsubmit="return false;">
+        <label class="label">Identificación
+          <input type="text" placeholder="Ingrese su identificación" />
+        </label>
+        <label class="label">Nombre Completo
+          <input type="text" placeholder="Ingrese su nombre completo" />
+        </label>
+        <label class="label">Correo Electrónico
+          <input type="email" placeholder="usuario@ejemplo.com" />
+        </label>
+        <label class="label">Nombre de Usuario
+          <input type="text" placeholder="Ingrese nombre de usuario" />
+        </label>
+        <label class="label">Rol del Usuario
+          <select>
+            <option>Seleccionar rol</option>
+            <option>Administrador</option>
+            <option>Usuario</option>
+          </select>
+        </label>
+        <label class="label">Contraseña
+          <input id="pwd2" type="password" placeholder="Ingrese una contraseña" />
+        </label>
+        <div class="form-actions">
+          <button class="btn green">Crear Usuario</button>
+          <a href="index.html" class="btn red">Atrás</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
