@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartDrop - Acceder</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gradient">
+  <main class="centered">
+    <section class="card login-card">
+      <header class="brand">
+        <div class="logo">💧🌿</div>
+        <h1>SmartDrop</h1>
+        <p class="subtitle">Sistema de Riego Automático</p>
+      </header>
+      <form class="form" action="#" method="post" onsubmit="return false;">
+        <label class="label">Usuario
+          <input type="text" placeholder="Usuario" />
+        </label>
+        <label class="label">Contraseña
+          <div class="password-wrap">
+            <input id="pwd" type="password" placeholder="Contraseña" />
+            <button type="button" class="icon-btn" onclick="togglePwd()">👁️</button>
+          </div>
+        </label>
+        <button class="btn primary">Acceder</button>
+        <a class="btn outline" href="register.html">Crear Cuenta</a>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function togglePwd() {
+      const p = document.getElementById('pwd');
+      p.type = p.type === 'password' ? 'text' : 'password';
+    }
+  </script>
+</body>
+</html>
