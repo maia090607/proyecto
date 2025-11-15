@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartDrop - Agregar Planta</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gradient">
+  <main class="centered wide">
+    <h1 class="page-title">AGREGAR UNA NUEVA PLANTA</h1>
+
+    <div class="layout-2col">
+      <section class="card form-card">
+        <form onsubmit="return false;">
+          <label class="label">Nombre
+            <input type="text" placeholder="Rosa Roja Premium" />
+          </label>
+          <label class="label">ID
+            <input type="text" placeholder="PLT001" />
+          </label>
+          <label class="label">Descripción
+            <textarea placeholder="Descripción de la planta"></textarea>
+          </label>
+          <div class="row">
+            <label class="label small">Humedad Óptima (%)<input type="number" placeholder="70" /></label>
+            <label class="label small">Temperatura Óptima (°C)<input type="number" placeholder="20" /></label>
+          </div>
+
+          <h4>Lista de Plantas Registradas</h4>
+          <ul class="list">
+            <li>Rosa Roja Premium — Humedad 70% | Temp 20°C</li>
+            <li>Helecho Boston — Humedad 80% | Temp 18°C</li>
+          </ul>
+
+          <div class="form-actions">
+            <button class="btn green">Registrar Planta</button>
+            <button class="btn red">Eliminar Planta</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="card sidebar">
+        <div class="image-placeholder">Vista previa de la imagen</div>
+        <p class="muted">Sistema de Riego Inteligente</p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>add
